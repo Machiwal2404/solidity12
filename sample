@@ -1,0 +1,18 @@
+// SPDX-License-Identifier: MIT
+
+pragma solidity >=0.5.0<0.9.0 ;
+
+contract Sample
+{
+    string name = "Ayu" ;                            //needs getter function    
+    uint  public age = 12;                       v  //public state variabld
+
+    function Name() public view returns(string memory)
+    {
+        return name;
+    }
+    function Age() public 
+    {
+        age = age+1;
+    }
+}
