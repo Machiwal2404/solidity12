@@ -10,7 +10,7 @@ contract lottery {
     {
         manager = msg.sender;
     }
-    receive() external public payable
+    receive() external payable
     {
         require(msg.value ==1 ether);   
         participants.push(payable(msg.sender));
